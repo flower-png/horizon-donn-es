@@ -80,7 +80,7 @@ Densite_Population
 |    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
 |    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
 
-# Données rencesement à télécharger
+# Données rencesement 2016 télécharger
 ## Logement
 ### Mode d'occupation (essentiel)
 ```
@@ -155,6 +155,96 @@ v3282 - Non-immigrants                        ← population de référence
 v3283 - Immigrants (total)                    ← proportion générale
 v3428 - Réfugiés                              ← population très vulnérable
 v3427 - Immigrants parrainés par la famille   ← revenus souvent plus faibles
+```
+⚠️ Note importante
+v3290 (immigrants 2011-2016) est votre variable clé car ces personnes sont :
+
+Moins bien informées de leurs droits comme locataires
+Souvent dans des logements précaires
+Moins susceptibles de contester une éviction au TAL
+
+Combinez-la avec v3948 (% locataires consacrant 30%+ au logement) pour créer un indice de vulnérabilité par secteur de recensement.
+
+# Données rencesement 2021 télécharger
+## Logement
+### Mode d'occupation (essentiel)
+```
+v4064 - Propriétaire
+v4065 - Locataire
+```
+### Inabordabilité (très important)
+```
+v4116 - 30% ou plus du revenu au logement (tous)
+v4141 - % locataires consacrant 30%+ au logement  ← priorité haute
+v4129 - Ayant des besoins impérieux en logement   ← indicateur clé
+v4142 - % locataires ayant besoins impérieux       ← encore plus ciblé
+```
+### Loyers (cœur de votre analyse)
+```
+v4143 - Frais mensuels médians locataires ($)  ← comparer avec v3949 de 2016
+v4144 - Frais mensuels moyens locataires ($)
+```
+### État du logement (renovictions)
+```
+v4100 - Réparations majeures requises          ← lié aux renovictions
+```
+### Valeur immobilière
+```
+v4137 - Valeur médiane des logements ($)       ← pression du marché
+```
+
+## Revenu
+
+### Revenu des ménages (essentiel)
+```
+v229 - Revenu total médian 2020 ($)           ← comparer avec v1868 de 2016
+v231 - Revenu après impôt médian 2020 ($)     ← revenu réel disponible
+```
+### Faible revenu (vulnérabilité)
+```
+v317 - Fréquence faible revenu MFR-ApI (%)    ← taux pauvreté global
+v320 - 18 à 64 ans (%)                        ← population active
+v321 - 65 ans et plus (%)                     ← personnes âgées vulnérables
+```
+### Revenu individuel
+```
+v293 - Revenu total médian 2019 ($)           ← année pré-COVID (plus fiable)
+v295 - Revenu après impôt médian 2019 ($)     ← recommandé car 2020 biaisé COVID
+```
+⚠️ Attention importante — COVID
+Préférez v293 (revenu 2019) pour comparer avec 2016 — c'est plus honnête méthodologiquement. Mentionnez-le dans votre analyse.
+
+## Démographie
+### Population
+```
+v1  - Population 2016                        ← taille du secteur
+v3  - Variation population 2011-2016 (%)     ← croissance/déclin
+v6  - Densité de population (km²)            ← urbanité
+```
+
+### Âge
+```
+v34 - Âge moyen                              ← profil démographique
+v37 - % 15 à 64 ans                          ← population active
+v38 - % 65 ans et plus                       ← personnes âgées vulnérables
+```
+
+### Habitation
+```
+v111 - Appartement ou plain-pied dans un duplex      ← typique Montréal
+v112 - Appartement immeuble moins de 5 étages        ← logement locatif dominant
+v113 - Appartement immeuble 5 étages ou plus         ← tours locatives
+v122 - Taille moyenne des ménages privés             ← surpeuplement
+``` 
+
+### Immigration
+```
+v4163 - Immigrants arrivés 2016 à 2021        ← immigrants récents = vulnérables
+v4164 - Résidents non permanents              ← très vulnérables aux évictions
+v4155 - Non-immigrants                        ← population de référence
+v4156 - Immigrants (total)                    ← proportion générale
+v4301 - Réfugiés                              ← population très vulnérable
+v4300 - Immigrants parrainés par la famille   ← revenus souvent plus faibles
 ```
 ⚠️ Note importante
 v3290 (immigrants 2011-2016) est votre variable clé car ces personnes sont :
