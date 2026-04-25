@@ -1,0 +1,41 @@
+Profils du recensement de 2016 / Profil des secteurs de recensement
+COL0 - GEO UID
+COL1 - RMR / AR code
+COL2 - RMR / AR nom
+COL3 - Secteur de recensement (SR)
+COL4 - logement - Sexe total / Total - Ménages propriétaires et locataires dont le revenu total du ménage est supérieur à zéro, dans les logements privés non agricoles, hors réserve selon le rapport des frais de logement au revenu - Données-échantillon (25 %)
+COL5 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %)
+COL6 - logement - Sexe total / Total - Ménages propriétaires et locataires dont le revenu total du ménage est supérieur à zéro, dans les logements privés non agricoles, hors réserve selon le rapport des frais de logement au revenu - Données-échantillon (25 %) / 30 % ou plus du revenu est consacré aux frais de logement
+COL7 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages locataires consacrant 30 % ou plus de leur revenu aux frais de logement
+COL8 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels médians pour les logements occupés par un ménage locataire ($)
+COL9 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels moyens pour les logements occupés par un ménage locataire ($)
+COL10 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages locataires dans un logement subventionné
+COL11 - logement - Sexe total / Total - Ménages propriétaires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Valeur médiane des logements ($)
+COL12 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillons (25 %) / Propriétaire
+COL13 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillons (25 %) / Locataire
+COL14 - logement - Sexe total / Total - Ménages propriétaires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages propriétaires consacrant 30 % ou plus de leur revenu aux frais de logement
+COL15 - logement - Sexe total / Total - Logements privés occupés selon l'état du logement - Données-échantillons (25 %) / Réparations majeures requises
+COL16 - Revenu - Sexe total / otal - Statistiques du revenu en 2015 pour les familles économiques monoparentales dans les ménages privés - Données intégrales (100 %) / Revenu total médian des familles économiques monoparentales en 2015 ($)
+COL17 - Revenu - Sexe total / otal - Statistiques du revenu en 2015 pour les familles économiques monoparentales dans les ménages privés - Données intégrales (100 %)
+COL18 - Revenu - Sexe total / Total - Statistiques du revenu en 2015 pour les ménages privés selon la taille du ménage - Données intégrales (100 %) / Revenu total médian des ménages en 2015 ($)
+COL19 - Revenu - Sexe total / Total - Statistiques du revenu en 2015 pour les ménages privés selon la taille du ménage - Données intégrales (100 %) / Revenu après impôt médian des ménages en 2015 ($)
+COL20 - Revenu - Sexe total / Fréquence du faible revenu fondée sur la Mesure de faible revenu après impôt (MFR-ApI) (%)
+COL21 - Revenu - Sexe total / Fréquence du faible revenu fondée sur la Mesure de faible revenu après impôt (MFR-ApI) (%) / 18 à 64 ans (%)
+COL22 - Revenu - Sexe total / Statistiques du revenu en 2015 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) / Nombre de bénéficiaires d`un revenu total âgés de 15 ans et plus dans les ménages privés - Données intégrales (100 %) / Revenu total médian en 2015 parmi les bénéficiaires ($)
+COL23 - Revenu - Sexe total / Statistiques du revenu en 2015 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) / Nombre de bénéficiaires d`un revenu après impôt âgés de 15 ans et plus dans les ménages privés - Données intégrales (100 %) / Revenu après impôt médian en 2015 parmi les bénéficiaires ($)
+COL24 - Chiffres de population et des logements / Population, 2016
+COL25 - Chiffres de population et des logements / Variation en pourcentage de la population, 2011 à 2016
+COL26 - Chiffres de population et des logements / Logements privés occupés par des résidents habituels
+COL27 - Chiffres de population et des logements / Densité de la population au kilomètre carré
+COL28 - Âge et sexe - Les deux sexes / Âge moyen de la population ; Les deux sexes
+COL29 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 15 à 64 ans ; Les deux sexes
+COL30 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 65 ans et plus ; Les deux sexes
+COL31 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Autre logement attenant / Appartement dans un immeuble de moins de cinq étages
+COL32 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement dans un immeuble de cinq étages ou plus
+COL33 - Caractéristiques des ménages et des logements / Taille moyenne des ménages privés
+COL34 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) / Immigrants / 2011 à 2016
+COL35 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) / Résidents non permanents
+COL36 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) / Non-immigrants
+COL37 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) / Immigrants
+COL38 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2016 - Données-échantillon (25 %) / Réfugiés
+COL39 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2016 - Données-échantillon (25 %) / Immigrants parrainés par la famille

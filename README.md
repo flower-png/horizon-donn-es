@@ -71,7 +71,6 @@ Revenu_Median
 Densite_Population
 ```
 
-
 # Ordre de travail recommandé
 |Fait|Étape | Quoi faire|
 |----|------|-----------|
@@ -80,3 +79,88 @@ Densite_Population
 |    | 3    |Demander données TAL par accès à l'information|
 |    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
 |    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
+
+# Données rencesement à télécharger
+## Logement
+### Mode d'occupation (essentiel)
+```
+v3886 - Propriétaire
+v3887 - Locataire
+```
+### Inabordabilité (très important)
+```
+v3937 - 30% ou plus du revenu consacré au logement (tous)
+v3941 - % propriétaires consacrant 30%+ au logement
+v3948 - % locataires consacrant 30%+ au logement  ← priorité haute
+```
+### Loyers (cœur de votre analyse)
+```
+v3949 - Frais de logement mensuels MÉDIANS locataires ($)  ← le plus important
+v3950 - Frais de logement mensuels MOYENS locataires ($)
+```
+### État du logement (renovictions)
+```
+v3921 - Réparations majeures requises  ← lié aux renovictions
+```
+### Valeur immobilière
+```
+v3944 - Valeur médiane des logements ($)  ← pression marché
+```
+
+## Revenu
+
+### Revenu des ménages (essentiel)
+```
+v1932 - Revenu total médian des ménages en 2015 ($)        ← le plus important
+v1933 - Revenu après impôt médian des ménages en 2015 ($)  ← revenu réel
+```
+### Faible revenu (vulnérabilité)
+```
+v2023 - Fréquence du faible revenu MFR-ApI (%)             ← taux pauvreté global
+v2026 - 18 à 64 ans (%)                                    ← population active
+```
+### Revenu individuel
+```
+v1868 - Revenu total médian en 2015 ($)                    ← revenu individuel
+v1870 - Revenu après impôt médian en 2015 ($)              ← revenu net
+```
+
+## Démographie
+### Population
+```
+v1  - Population 2016                        ← taille du secteur
+v3  - Variation population 2011-2016 (%)     ← croissance/déclin
+v6  - Densité de population (km²)            ← urbanité
+```
+
+### Âge
+```
+v34 - Âge moyen                              ← profil démographique
+v37 - % 15 à 64 ans                          ← population active
+v38 - % 65 ans et plus                       ← personnes âgées vulnérables
+```
+
+### Habitation
+```
+v111 - Appartement immeuble moins 5 étages   ← type dominant à Montréal
+v106 - Appartement immeuble 5 étages ou plus ← logement locatif dense
+v121 - Taille moyenne des ménages            ← surpeuplement
+``` 
+
+### Immigration
+```
+v3290 - Immigrants arrivés 2011 à 2016        ← immigrants récents = vulnérables
+v3291 - Résidents non permanents              ← très vulnérables aux évictions
+v3282 - Non-immigrants                        ← population de référence
+v3283 - Immigrants (total)                    ← proportion générale
+v3428 - Réfugiés                              ← population très vulnérable
+v3427 - Immigrants parrainés par la famille   ← revenus souvent plus faibles
+```
+⚠️ Note importante
+v3290 (immigrants 2011-2016) est votre variable clé car ces personnes sont :
+
+Moins bien informées de leurs droits comme locataires
+Souvent dans des logements précaires
+Moins susceptibles de contester une éviction au TAL
+
+Combinez-la avec v3948 (% locataires consacrant 30%+ au logement) pour créer un indice de vulnérabilité par secteur de recensement.
