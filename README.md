@@ -3,9 +3,8 @@
 |----|------|-----------|
 | ✅ | 1    |Télécharger Inside Airbnb (archives 2018-2024)|
 | ✅ | 2    |Extraire loyers médians recensement 2016 + 2021 par CT|
-|    | 3    |Demander données TAL par accès à l'information|
-|    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
-|    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
+| ✅ | 3    |Télécharger pression immobilière et permis de construction|
+|    | 4    |Construire le panel de données par census tract + annéeRégression spatiale dans GeoDa +    régression temporelle| 
 
 # Plutôt qu'une seule régression, pensez à 3 analyses complémentaires :
 ```
@@ -13,15 +12,15 @@
    (causes)                       (processus)                     (résultats)
 
 Airbnb ↑                         Renovictions                     Évictions ↑
-Prix immobilier ↑                Harcèlement TAL                  Déplacement
-Loyer ↑                          Rachats corporatifs              Perte logements
-Salaire stagnant                 Délais TAL                       abordables
+Prix immobilier ↑                                                  Déplacement
+Loyer ↑                                                          Perte logements
+Salaire stagnant                                                   abordables
 ```
 
 # Par variable — quoi faire avec les données
 ## 💰 Loyers (2016, 2021, 2023)
 
-Source : Recensement StatCan 2016 + 2021, SCHL annuel \
+Source : Recensement StatCan 2016 + 2021\
 Quoi faire : Calculer le % d'augmentation par census tract \
 Analyse : Carte choroplèthe + corrélation avec densité Airbnb
 
@@ -30,24 +29,6 @@ Analyse : Carte choroplèthe + corrélation avec densité Airbnb
 Source : Inside Airbnb (archives disponibles)\
 Quoi faire : Compter les listings Entire home/apt par census tract par année → courbe de croissance\
 Analyse : Régression temporelle — est-ce que l'augmentation Airbnb précède l'augmentation des évictions ?
-
-## 🏢 Rachats corporatifs
-
-Source : Rôle foncier Montréal + Registre foncier Québec\
-Quoi faire : Identifier les acheteurs non-individuels (compagnies, REITs)\
-Analyse : Comparer taux d'éviction dans immeubles corporatifs vs individuels
-
-## 🔨 Logements retirés du marché
-
-Source : Permis Ville de Montréal + changements d'usage\
-Quoi faire : Comptabiliser conversions locatif → Airbnb ou condo par quartier\
-Analyse : Corrélation avec taux d'inoccupation SCHL
-
-## ⚖️ TAL — délais et harcèlement
-
-Source : Données TAL (accès via demande d'accès à l'information)\
-Quoi faire : Délai moyen par type de cause + volume de dossiers par quartier\
-Analyse : Est-ce que les délais longs découragent les locataires ?
 
 ## 💼 Revenus vs loyers
 
@@ -64,12 +45,11 @@ Analyse : Identifier les zones où l'écart se creuse le plus
 
 **Variables indépendantes** :
 ```
-Airbnb_Count_Entire          (pression directe)
-Augmentation_Loyer_16_21     (pression marché)
-Rachats_Corporatifs          (acteurs)
-Ratio_Loyer_Revenu           (vulnérabilité)
-Permis_Renovation            (renovictions)
-Delai_Moyen_TAL              (accès justice)
+Airbnb_Count_Entire           (pression directe)
+Augmentation_Loyer_16_21      (pression marché)
+Augmentation_Valeur_16_21 (%) (pression immobilière)
+Ratio_Loyer_Revenu            (vulnérabilité)
+Permis_Renovation             (renovictions)
 ```
 
 **Variables de contrôle** :
