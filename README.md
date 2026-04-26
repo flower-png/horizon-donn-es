@@ -226,3 +226,118 @@ Le duplex et l'immeuble de moins de 5 étages sont les types de logement locatif
 Les réfugiés sont la catégorie la plus vulnérable — ils arrivent souvent sans réseau de soutien solide et avec des ressources financières limitées, ce qui les rend particulièrement exposés aux pratiques d'éviction abusives.
  
 ---
+# Résultat
+## Régression
+
+🟢 Résultats globaux
+```
+R² = 0.34         → densité explique 34% des évictions ✅
+R² ajusté = 0.28  → positif et stable ✅
+F-statistic p = 0.038 → SIGNIFICATIF (< 0.05) ✅ première fois !
+```
+
+📊 Variable significative
+```
+densite_2021  coef = 0.033  p = 0.038  ✅ SIGNIFICATIF
+Interprétation concrète :
+Chaque augmentation de 1000 personnes/km²
+= environ 33 évictions supplémentaires par année
+```
+
+🟢 Diagnostics tous bons
+```
+Multicolinéarité   = 6.6   ✅ excellent (était 22.9 avant)
+Jarque-Bera p      = 0.10  ✅ erreurs normales
+Breusch-Pagan p    = 0.38  ✅ pas d'hétéroscédasticité
+```
+
+⚠️ Limites à mentionner dans votre travail
+1. N = 13 → petit échantillon, résultats à interpréter avec prudence
+2. R² = 0.34 → 66% des évictions sont expliquées par d'autres facteurs
+               non capturés dans ce modèle
+3. La densité est un proxy — elle capture indirectement
+   la pression du marché locatif, la concentration Airbnb,
+   et la vulnérabilité des locataires
+4. Airbnb n'est pas significatif à cette échelle
+   → lien indirect médié par la densité urbaine
+
+💡 Ce que vous pouvez conclure
+```
+"La densité de population est le seul prédicteur
+significatif des évictions à l'échelle des
+arrondissements de Montréal (β = 0.033, p = 0.038).
+
+Les arrondissements plus denses — comme Rosemont,
+Le Plateau et Villeray — concentrent davantage
+d'évictions, reflétant une pression plus intense
+sur le marché locatif.
+
+Bien qu'Airbnb soit souvent associé aux évictions
+dans la littérature, son effet direct n'est pas
+détectable à cette échelle d'analyse, suggérant
+que son impact transite par d'autres mécanismes
+comme la hausse des loyers et la densification."
+```
+
+## Stats 
+Analyse des statistiques descriptives
+🏠 Logement — Ce qui ressort
+```
+Loyer médian 2016 : 786 $  →  Loyer médian 2021 : 906 $
+Augmentation moyenne : 15% sur 5 ans
+→ Certains arrondissements jusqu'à +28% ⚠️
+% locataires moyen : 65%  (min 36%, max 73%)
+→ Montréal est majoritairement locataire
+→ Population très exposée aux évictions
+```
+💰 Revenu — Problème important
+```
+Augmentation revenu : 17% (0.17)
+Augmentation loyer  : 15%
+→ Les loyers augmentent presque autant que les revenus
+→ Mais le revenu médian reste bas : 34 378 $
+→ Loyer moyen = 906 $ = ~10 872 $/an = 32% du revenu médian
+→ Juste au seuil d'inabordabilité (30%)
+```
+🏡 Airbnb — Très variable
+```
+Moyenne : 506 listings    
+Médiane : 216 listings    ← écart énorme avec la moyenne
+Maximum : 2611 listings   ← probablement Ville-Marie ou Plateau
+Écart-type : 740          ← très grande disparité entre arrondissements
+La médiane beaucoup plus basse que la moyenne indique que quelques arrondissements concentrent la majorité des Airbnb.
+```
+📉 Variation ratio loyer/revenu
+```
+Moyenne : -0.56  ← le ratio a diminué en moyenne
+→ Contre-intuitif mais s'explique par les transferts COVID
+   qui ont gonflé les revenus 2020 artificiellement
+```
+✅ Ce que vous pouvez dire dans votre travail
+```
+"Entre 2016 et 2021, le loyer médian a augmenté 
+de 15% dans les arrondissements montréalais étudiés,
+tandis que le revenu médian n'a progressé que de 17%.
+
+Avec un loyer médian de 906$ représentant environ 
+32% du revenu médian mensuel, les locataires 
+montréalais se situent juste au seuil critique 
+d'inabordabilité défini par la SCHL (30%).
+
+La forte disparité dans la distribution des 
+listings Airbnb (médiane = 216, maximum = 2611) 
+suggère une concentration spatiale de la pression
+touristique dans quelques arrondissements centraux."
+```
+
+💡 Statistiques les plus parlantes pour votre présentation
+|Statistique|Valeur|Impact|
+|-----------|------|------|
+|Hausse loyer max|+28% |Très parlant% |
+|locataires moyen| 65% |Vulnérabilité|
+|Loyer/revenu| 32% |Inabordabilité|
+|Max Airbnb| 2611 |Concentration|
+|Max évictions| 591 | Rosemont|
+
+
+---
