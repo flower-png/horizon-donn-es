@@ -3,36 +3,33 @@ COL0 - GEO UID
 COL1 - RMR / AR code
 COL2 - RMR / AR nom
 COL3 - Secteur de recensement (SR)
-COL4 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillon (25 %) / Propriétaire
-COL5 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillon (25 %) / Locataire
-COL6 - logement - Sexe total / Total - Ménages propriétaires et locataires dont le revenu total du ménage est supérieur à zéro, dans les logements privés non agricoles, hors réserve selon le rapport des frais de logement au revenu - Données-échantillon (25 %) / 30 % ou plus du revenu est consacré aux frais de logement
-COL7 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages locataires consacrant 30 % ou plus de leur revenu aux frais de logement
-COL8 - logement - Sexe total / Total - Ménages propriétaires et locataires dont le revenu total du ménage est supérieur à zéro et le rapport des frais de logement au revenu est moins de 100 %, dans les logements privés non agricole, hors réserve - Données-échantillon (25 %) / Ayant des besoins impérieux en matière de logement
-COL9 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % ayant des besoins impérieux en matière de logement
-COL10 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels médians pour les logements occupés par un ménage locataire ($)
-COL11 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels moyens pour les logements occupés par un ménage locataire ($)
-COL12 - logement - Sexe total / Total - Logements privés occupés selon l'état du logement - Données-échantillon (25 %) / Réparations majeures requises
-COL13 - logement - Sexe total / Total - Ménages propriétaires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Valeur médiane des logements ($)
-COL14 - Revenu - Sexe total / Total - Statistiques du revenu en 2020 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu total âgés de 15 ans et plus dans les ménages privés en 2020 - Données intégrales (100 %) ; Les deux sexes / Revenu total médian en 2020 parmi les bénéficiaires ($) ; Les deux sexes
-COL15 - Revenu - Sexe total / Total - Statistiques du revenu en 2020 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu après impôt en 2020 âgés de 15 ans et plus dans les ménages privés en 2020 - Données intégrales (100 %) ; Les deux sexes / Revenu après impôt médian en 2020 parmi les bénéficiaires ($) ; Les deux sexes
+COL4 - Chiffres de population et des logements / Population, 2021
+COL5 - Chiffres de population et des logements / Variation en pourcentage de la population, 2016 à 2021
+COL6 - Chiffres de population et des logements / Densité de la population au kilomètre carré
+COL7 - Âge et sexe - Les deux sexes / Âge moyen de la population ; Les deux sexes
+COL8 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 15 à 64 ans ; Les deux sexes
+COL9 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 65 ans et plus ; Les deux sexes
+COL10 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement ou plain-pied dans un duplex
+COL11 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement dans un immeuble de moins de cinq étages
+COL12 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement dans un immeuble de cinq étages ou plus
+COL13 - Caractéristiques des ménages et des logements / Taille moyenne des ménages privés
+COL14 - Revenu - Sexe total / Total - Statistiques du revenu en 2019 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu total âgés de 15 ans et plus dans les ménages privés en 2019 - Données intégrales (100 %) ; Les deux sexes / Revenu total médian en 2019 parmi les bénéficiaires ($) ; Les deux sexes
+COL15 - Revenu - Sexe total / Total - Statistiques du revenu en 2019 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu après impôt âgés de 15 ans et plus dans les ménages privés en 2019 - Données intégrales (100 %) ; Les deux sexes / Revenu après impôt médian en 2019 parmi les bénéficiaires ($) ; Les deux sexes
 COL16 - Revenu - Sexe total / Fréquence du faible revenu fondée sur la Mesure de faible revenu après impôt (MFR-ApI) (%) ; Les deux sexes
 COL17 - Revenu - Sexe total / Fréquence du faible revenu fondée sur la Mesure de faible revenu après impôt (MFR-ApI) (%) ; Les deux sexes / 18 à 64 ans (%) ; Les deux sexes
 COL18 - Revenu - Sexe total / Fréquence du faible revenu fondée sur la Mesure de faible revenu après impôt (MFR-ApI) (%) ; Les deux sexes / 65 ans et plus (%) ; Les deux sexes
-COL19 - Revenu - Sexe total / Total - Statistiques du revenu en 2019 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu total âgés de 15 ans et plus dans les ménages privés en 2019 - Données intégrales (100 %) ; Les deux sexes / Revenu total médian en 2019 parmi les bénéficiaires ($) ; Les deux sexes
-COL20 - Revenu - Sexe total / Total - Statistiques du revenu en 2019 pour la population âgée de 15 ans et plus dans les ménages privés - Données intégrales (100 %) ; Les deux sexes / Nombre de bénéficiaires d'un revenu après impôt âgés de 15 ans et plus dans les ménages privés en 2019 - Données intégrales (100 %) ; Les deux sexes / Revenu après impôt médian en 2019 parmi les bénéficiaires ($) ; Les deux sexes
-COL21 - Chiffres de population et des logements / Population, 2021
-COL22 - Chiffres de population et des logements / Variation en pourcentage de la population, 2016 à 2021
-COL23 - Chiffres de population et des logements / Densité de la population au kilomètre carré
-COL24 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes
-COL25 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 15 à 64 ans ; Les deux sexes
-COL26 - Âge et sexe - Les deux sexes / Total - Répartition (%) de la population par grands groupes d'âge - Données intégrales (100 %) ; Les deux sexes / 65 ans et plus ; Les deux sexes
-COL27 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement ou plain-pied dans un duplex
-COL28 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement dans un immeuble de moins de cinq étages
-COL29 - Caractéristiques des ménages et des logements / Total - Logements privés occupés par type de construction résidentielle - Données intégrales (100 %) / Appartement dans un immeuble de cinq étages ou plus
-COL30 - Caractéristiques des ménages et des logements / Taille moyenne des ménages privés
-COL31 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Immigrants ; Les deux sexes / 2011 à 2021 ; Les deux sexes / 2016 à 2021 ; Les deux sexes
-COL32 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Résidents non permanents ; Les deux sexes
-COL33 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Non-immigrants ; Les deux sexes
-COL34 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Immigrants ; Les deux sexes
-COL35 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2021 - Données-échantillon (25 %) ; Les deux sexes / Réfugiés ; Les deux sexes
-COL36 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2021 - Données-échantillon (25 %) ; Les deux sexes / Immigrants parrainés par la famille ; Les deux sexes
+COL19 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Immigrants ; Les deux sexes / 2011 à 2021 ; Les deux sexes / 2016 à 2021 ; Les deux sexes
+COL20 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Résidents non permanents ; Les deux sexes
+COL21 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Non-immigrants ; Les deux sexes
+COL22 - Immigration - Sexe total / Total - Statut d'immigrant et période d'immigration pour la population dans les ménages privés - Données-échantillon (25 %) ; Les deux sexes / Immigrants ; Les deux sexes
+COL23 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2021 - Données-échantillon (25 %) ; Les deux sexes / Réfugiés ; Les deux sexes
+COL24 - Immigration - Sexe total / Total - Catégorie d'admission et type de demandeur de la population immigrante dans les ménages privés admise entre 1980 et 2021 - Données-échantillon (25 %) ; Les deux sexes / Immigrants parrainés par la famille ; Les deux sexes
+COL25 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillon (25 %) / Propriétaire
+COL26 - logement - Sexe total / Total - Ménages privés selon le mode d'occupation - Données-échantillon (25 %) / Locataire
+COL27 - logement - Sexe total / Total - Ménages propriétaires et locataires dont le revenu total du ménage est supérieur à zéro, dans les logements privés non agricoles, hors réserve selon le rapport des frais de logement au revenu - Données-échantillon (25 %) / 30 % ou plus du revenu est consacré aux frais de logement
+COL28 - logement - Sexe total / Total - Ménages propriétaires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages propriétaires consacrant 30 % ou plus de leur revenu aux frais de logement
+COL29 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / % de ménages locataires consacrant 30 % ou plus de leur revenu aux frais de logement
+COL30 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels médians pour les logements occupés par un ménage locataire ($)
+COL31 - logement - Sexe total / Total - Ménages locataires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Frais de logement mensuels moyens pour les logements occupés par un ménage locataire ($)
+COL32 - logement - Sexe total / Total - Logements privés occupés selon l'état du logement - Données-échantillon (25 %) / Réparations majeures requises
+COL33 - logement - Sexe total / Total - Ménages propriétaires dans les logements privés non agricoles, hors réserve - Données-échantillon (25 %) / Valeur médiane des logements ($)

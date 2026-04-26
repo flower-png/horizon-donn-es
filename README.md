@@ -80,177 +80,169 @@ Densite_Population
 |    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
 |    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
 
-# Données rencesement 2016 télécharger
-## Logement
-### Mode d'occupation (essentiel)
-```
-v3886 - Propriétaire
-v3887 - Locataire
-```
-### Inabordabilité (très important)
-```
-v3937 - 30% ou plus du revenu consacré au logement (tous)
-v3941 - % propriétaires consacrant 30%+ au logement
-v3948 - % locataires consacrant 30%+ au logement  ← priorité haute
-```
-### Loyers (cœur de votre analyse)
-```
-v3949 - Frais de logement mensuels MÉDIANS locataires ($)  ← le plus important
-v3950 - Frais de logement mensuels MOYENS locataires ($)
-```
-### État du logement (renovictions)
-```
-v3921 - Réparations majeures requises  ← lié aux renovictions
-```
-### Valeur immobilière
-```
-v3944 - Valeur médiane des logements ($)  ← pression marché
-```
+# Documentation des variables du recensement
+## Tableau de correspondance 2016 — 2021
+ 
+| Données | 2016 | 2021 |
+|--------|------|------|
+| **Logement** | | |
+| Occupation : Propriétaire | v3886 | v4064 |
+| Occupation : Locataire | v3887 | v4065 |
+| **Inabordabilité** | | |
+| 30% ou plus du revenu consacré au logement (tous) | v3937 | v4116 |
+| % propriétaires consacrant 30%+ au logement | v3941 | v4133 |
+| % locataires consacrant 30%+ au logement | v3948 | v4141 |
+| Frais de logement mensuels MÉDIANS locataires ($) | v3949 | v4143 |
+| Frais de logement mensuels MOYENS locataires ($) | v3950 | v4144 |
+| Réparations majeures requises | v3921 | v4100 |
+| Valeur médiane des logements ($) | v3944 | v4137 |
+| **Revenu** | | |
+| Revenu total médian individuel ($) | v1868 | v293 (2019) |
+| Revenu après impôt médian individuel ($) | v1870 | v295 (2019) |
+| Fréquence du faible revenu MFR-ApI (%) | v2023 | v317 |
+| Faible revenu 18 à 64 ans (%) | v2026 | v320 |
+| Faible revenu 65 ans et plus (%) | v2027 | v321 |
+| **Population** | | |
+| Population | v1 | v1 |
+| Variation population (%) | v3 | v3 |
+| Densité de population (km²) | v6 | v6 |
+| Âge moyen | v34 | v39 |
+| % 15 à 64 ans | v37 | v36 |
+| % 65 ans et plus | v38 | v37 |
+| **Habitation** | | |
+| Appartement ou plain-pied dans un duplex | v110 | v111 |
+| Appartement immeuble moins de 5 étages | v111 | v112 |
+| Appartement immeuble 5 étages ou plus | v106 | v113 |
+| Taille moyenne des ménages | v121 | v122 |
+| **Immigration** | | |
+| Immigrants récents | v3290 | v4163 |
+| Résidents non permanents | v3291 | v4164 |
+| Non-immigrants | v3282 | v4155 |
+| Immigrants (total) | v3283 | v4156 |
+| Réfugiés | v3428 | v4301 |
+| Immigrants parrainés par la famille | v3427 | v4300 |
 
-## Revenu
+## Explication des variables
+ 
+### 🏠 Logement
+ 
+#### Mode d'occupation
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3886 | v4064 | Nombre de ménages propriétaires |
+| v3887 | v4065 | Nombre de ménages locataires |
+ 
+Indique la proportion de locataires par secteur de recensement — les secteurs à forte proportion de locataires sont plus vulnérables aux évictions et à la pression du marché Airbnb.
+ 
+#### Inabordabilité
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3937 | v4116 | 30%+ du revenu consacré au logement (tous ménages) |
+| v3941 | v4133 | % propriétaires consacrant 30%+ au logement |
+| v3948 | v4141 | % locataires consacrant 30%+ au logement ⭐ priorité haute |
+ 
+Le seuil de 30% est la mesure standard d'inabordabilité du logement au Canada. Un ménage qui dépasse ce seuil est considéré en situation de stress financier lié au logement. **v3948/v4141** est votre indicateur le plus important car il cible directement les locataires.
+ 
+#### Loyers
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3949 | v4143 | Frais de logement mensuels MÉDIANS locataires ($) ⭐ |
+| v3950 | v4144 | Frais de logement mensuels MOYENS locataires ($) |
+ 
+La médiane est préférable à la moyenne car elle est moins affectée par les valeurs extrêmes. 
 
-### Revenu des ménages (essentiel)
-```
-v1932 - Revenu total médian des ménages en 2015 ($)        ← le plus important
-v1933 - Revenu après impôt médian des ménages en 2015 ($)  ← revenu réel
-```
-### Faible revenu (vulnérabilité)
-```
-v2023 - Fréquence du faible revenu MFR-ApI (%)             ← taux pauvreté global
-v2026 - 18 à 64 ans (%)                                    ← population active
-```
-### Revenu individuel
-```
-v1868 - Revenu total médian en 2015 ($)                    ← revenu individuel
-v1870 - Revenu après impôt médian en 2015 ($)              ← revenu net
-```
+#### État du logement
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3921 | v4100 | Réparations majeures requises |
+ 
+Indicateur de dégradation du parc locatif. Un nombre élevé de logements nécessitant des réparations majeures peut signaler des situations de renoviction — propriétaires qui utilisent les travaux comme prétexte pour évincer les locataires.
+ 
+#### Valeur immobilière
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3944 | v4137 | Valeur médiane des logements ($) |
+ 
+Mesure la pression du marché immobilier. Une forte hausse de la valeur des logements entre 2016 et 2021 indique une gentrification en cours, ce qui est corrélé avec une augmentation des évictions.
+ 
+---
+ 
+### 💰 Revenu
+ 
+#### Revenu médian individuel
+ 
+> ⚠️ **Note méthodologique importante :** Les revenus 2020 sont biaisés par les prestations COVID-19 (PCU). Utilisez **v293/v295** (revenus 2019, pré-COVID) pour comparer avec 2016. Mentionnez cette décision dans votre analyse.
+ 
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v1868 | v293 | Revenu total médian individuel ($) — utiliser 2019 |
+| v1870 | v295 | Revenu après impôt médian individuel ($) — utiliser 2019 |
 
-## Démographie
-### Population
-```
-v1  - Population 2016                        ← taille du secteur
-v3  - Variation population 2011-2016 (%)     ← croissance/déclin
-v6  - Densité de population (km²)            ← urbanité
-```
-
-### Âge
-```
-v34 - Âge moyen                              ← profil démographique
-v37 - % 15 à 64 ans                          ← population active
-v38 - % 65 ans et plus                       ← personnes âgées vulnérables
-```
-
-### Habitation
-```
-v111 - Appartement immeuble moins 5 étages   ← type dominant à Montréal
-v106 - Appartement immeuble 5 étages ou plus ← logement locatif dense
-v121 - Taille moyenne des ménages            ← surpeuplement
-``` 
-
-### Immigration
-```
-v3290 - Immigrants arrivés 2011 à 2016        ← immigrants récents = vulnérables
-v3291 - Résidents non permanents              ← très vulnérables aux évictions
-v3282 - Non-immigrants                        ← population de référence
-v3283 - Immigrants (total)                    ← proportion générale
-v3428 - Réfugiés                              ← population très vulnérable
-v3427 - Immigrants parrainés par la famille   ← revenus souvent plus faibles
-```
-⚠️ Note importante
-v3290 (immigrants 2011-2016) est votre variable clé car ces personnes sont :
-
-Moins bien informées de leurs droits comme locataires
-Souvent dans des logements précaires
-Moins susceptibles de contester une éviction au TAL
-
-Combinez-la avec v3948 (% locataires consacrant 30%+ au logement) pour créer un indice de vulnérabilité par secteur de recensement.
-
-# Données rencesement 2021 télécharger
-## Logement
-### Mode d'occupation (essentiel)
-```
-v4064 - Propriétaire
-v4065 - Locataire
-```
-### Inabordabilité (très important)
-```
-v4116 - 30% ou plus du revenu au logement (tous)
-v4141 - % locataires consacrant 30%+ au logement  ← priorité haute
-v4129 - Ayant des besoins impérieux en logement   ← indicateur clé
-v4142 - % locataires ayant besoins impérieux       ← encore plus ciblé
-```
-### Loyers (cœur de votre analyse)
-```
-v4143 - Frais mensuels médians locataires ($)  ← comparer avec v3949 de 2016
-v4144 - Frais mensuels moyens locataires ($)
-```
-### État du logement (renovictions)
-```
-v4100 - Réparations majeures requises          ← lié aux renovictions
-```
-### Valeur immobilière
-```
-v4137 - Valeur médiane des logements ($)       ← pression du marché
-```
-
-## Revenu
-
-### Revenu des ménages (essentiel)
-```
-v229 - Revenu total médian 2020 ($)           ← comparer avec v1868 de 2016
-v231 - Revenu après impôt médian 2020 ($)     ← revenu réel disponible
-```
-### Faible revenu (vulnérabilité)
-```
-v317 - Fréquence faible revenu MFR-ApI (%)    ← taux pauvreté global
-v320 - 18 à 64 ans (%)                        ← population active
-v321 - 65 ans et plus (%)                     ← personnes âgées vulnérables
-```
-### Revenu individuel
-```
-v293 - Revenu total médian 2019 ($)           ← année pré-COVID (plus fiable)
-v295 - Revenu après impôt médian 2019 ($)     ← recommandé car 2020 biaisé COVID
-```
-⚠️ Attention importante — COVID
-Préférez v293 (revenu 2019) pour comparer avec 2016 — c'est plus honnête méthodologiquement. Mentionnez-le dans votre analyse.
-
-## Démographie
-### Population
-```
-v1  - Population 2016                        ← taille du secteur
-v3  - Variation population 2011-2016 (%)     ← croissance/déclin
-v6  - Densité de population (km²)            ← urbanité
-```
-
-### Âge
-```
-v34 - Âge moyen                              ← profil démographique
-v37 - % 15 à 64 ans                          ← population active
-v38 - % 65 ans et plus                       ← personnes âgées vulnérables
-```
-
-### Habitation
-```
-v111 - Appartement ou plain-pied dans un duplex      ← typique Montréal
-v112 - Appartement immeuble moins de 5 étages        ← logement locatif dominant
-v113 - Appartement immeuble 5 étages ou plus         ← tours locatives
-v122 - Taille moyenne des ménages privés             ← surpeuplement
-``` 
-
-### Immigration
-```
-v4163 - Immigrants arrivés 2016 à 2021        ← immigrants récents = vulnérables
-v4164 - Résidents non permanents              ← très vulnérables aux évictions
-v4155 - Non-immigrants                        ← population de référence
-v4156 - Immigrants (total)                    ← proportion générale
-v4301 - Réfugiés                              ← population très vulnérable
-v4300 - Immigrants parrainés par la famille   ← revenus souvent plus faibles
-```
-⚠️ Note importante
-v3290 (immigrants 2011-2016) est votre variable clé car ces personnes sont :
-
-Moins bien informées de leurs droits comme locataires
-Souvent dans des logements précaires
-Moins susceptibles de contester une éviction au TAL
-
-Combinez-la avec v3948 (% locataires consacrant 30%+ au logement) pour créer un indice de vulnérabilité par secteur de recensement.
+#### Faible revenu
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v2023 | v317 | Fréquence du faible revenu MFR-ApI (%) |
+| v2026 | v320 | Faible revenu 18 à 64 ans (%) |
+| v2027 | v321 | Faible revenu 65 ans et plus (%) |
+ 
+La Mesure de faible revenu après impôt (MFR-ApI) identifie les ménages dont le revenu est nettement inférieur à la médiane canadienne. Les secteurs à fort taux de faible revenu sont plus vulnérables aux évictions car les résidents ont moins de ressources pour se défendre au TAL ou se reloger.
+ 
+---
+ 
+### 👥 Démographie
+ 
+#### Population
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v1 | v1 | Population totale du secteur |
+| v3 | v3 | Variation de la population (%) |
+| v6 | v6 | Densité de population (hab/km²) |
+ 
+La variation de population permet d'identifier les secteurs en forte croissance (gentrification possible) ou en déclin (déplacement de population).
+ 
+#### Âge
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v34 | v39 | Âge moyen de la population |
+| v37 | v36 | % population 15 à 64 ans |
+| v38 | v37 | % population 65 ans et plus |
+ 
+Les personnes âgées sont particulièrement vulnérables aux évictions car elles ont souvent des revenus fixes (retraite) qui n'augmentent pas au même rythme que les loyers.
+ 
+#### Type de logement
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v110 | v111 | Appartement ou plain-pied dans un duplex |
+| v111 | v112 | Appartement dans un immeuble de moins de 5 étages |
+| v106 | v113 | Appartement dans un immeuble de 5 étages ou plus |
+| v121 | v122 | Taille moyenne des ménages privés |
+ 
+Le duplex et l'immeuble de moins de 5 étages sont les types de logement locatif les plus communs à Montréal. Une diminution de ces types entre 2016 et 2021 peut indiquer des conversions vers Airbnb ou des condos.
+ 
+---
+ 
+### 🌍 Immigration
+ 
+#### Statut d'immigrant
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3290 | v4163 | Immigrants récents (arrivés dans les 5 dernières années) ⭐ |
+| v3291 | v4164 | Résidents non permanents |
+| v3282 | v4155 | Non-immigrants |
+| v3283 | v4156 | Immigrants (total) |
+ 
+> ⭐ **Variable clé :** Les immigrants récents (v3290/v4163) sont particulièrement vulnérables aux évictions car ils sont :
+> - Moins bien informés de leurs droits comme locataires au Québec
+> - Souvent dans des logements précaires ou informels
+> - Moins susceptibles de contester une éviction au TAL
+> - Plus susceptibles d'accepter des conditions de logement défavorables
+ 
+#### Catégorie d'admission
+| Variable 2016 | Variable 2021 | Description |
+|---|---|---|
+| v3428 | v4301 | Réfugiés |
+| v3427 | v4300 | Immigrants parrainés par la famille |
+ 
+Les réfugiés sont la catégorie la plus vulnérable — ils arrivent souvent sans réseau de soutien solide et avec des ressources financières limitées, ce qui les rend particulièrement exposés aux pratiques d'éviction abusives.
+ 
+---
