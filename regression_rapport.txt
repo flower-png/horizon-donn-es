@@ -1,0 +1,37 @@
+>>04/26/26 06:34:59
+REGRESSION
+----------
+SUMMARY OF OUTPUT: ORDINARY LEAST SQUARES ESTIMATION
+Data set            :  dataset_arrondissement_FINAL_REGRESSION
+Dependent Variable  :  Evictions_RCLALQ_2023
+Number of Observations:   13
+Mean dependent var  :     177.385  Number of Variables   :    2
+S.D. dependent var  :     154.939  Degrees of Freedom    :   11 
+
+R-squared           :    0.336069  F-statistic           :     5.56799
+Adjusted R-squared  :    0.275712  Prob(F-statistic)     :   0.0378366
+Sum squared residual:      207199  Log likelihood        :    -81.3434
+Sigma-square        :     18836.3  Akaike info criterion :     166.687
+S.E. of regression  :     137.245  Schwarz criterion     :     167.817
+Sigma-square ML     :     15938.4
+S.E of regression ML:     126.247
+
+-----------------------------------------------------------------------------
+       Variable      Coefficient      Std.Error    t-Statistic   Probability
+-----------------------------------------------------------------------------
+          CONSTANT       -114.05         129.24      -0.882468     0.39640
+      densite_2021     0.0327242      0.0138682        2.35966     0.03784
+-----------------------------------------------------------------------------
+
+REGRESSION DIAGNOSTICS  
+MULTICOLLINEARITY CONDITION NUMBER   6.639881
+TEST ON NORMALITY OF ERRORS
+TEST                  DF           VALUE             PROB
+Jarque-Bera            2             4.5684          0.10186
+
+DIAGNOSTICS FOR HETEROSKEDASTICITY  
+RANDOM COEFFICIENTS
+TEST                  DF           VALUE             PROB
+Breusch-Pagan test     1             0.7661          0.38142
+Koenker-Bassett test   1             0.3803          0.53746
+============================== END OF REPORT ================================
