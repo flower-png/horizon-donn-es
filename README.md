@@ -1,3 +1,12 @@
+# Ordre de travail à faire
+|Fait|Étape | Quoi faire|
+|----|------|-----------|
+| ✅ | 1    |Télécharger Inside Airbnb (archives 2018-2024)|
+| ✅ | 2    |Extraire loyers médians recensement 2016 + 2021 par CT|
+|    | 3    |Demander données TAL par accès à l'information|
+|    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
+|    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
+
 # Plutôt qu'une seule régression, pensez à 3 analyses complémentaires :
 ```
 1. PRESSION DU MARCHÉ     →    2. MÉCANISMES D'ÉVICTION    →    3. EFFETS
@@ -70,15 +79,6 @@ Revenu_Median
 % Immigrants_Recents
 Densite_Population
 ```
-
-# Ordre de travail recommandé
-|Fait|Étape | Quoi faire|
-|----|------|-----------|
-|    | 1    |Télécharger Inside Airbnb (archives 2018-2024)|
-|    | 2    |Extraire loyers médians recensement 2016 + 2021 par CT|
-|    | 3    |Demander données TAL par accès à l'information|
-|    | 4    |Télécharger rôle foncier Montréal (rachats corporatifs)|
-|    | 5    |Construire le panel de données par census tract + année6Régression spatiale dans GeoDa +    régression temporelle| 
 
 # Documentation des variables du recensement
 ## Tableau de correspondance 2016 — 2021

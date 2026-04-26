@@ -1,0 +1,33 @@
+﻿Quartier,Airbnb_Count,Prix_Median,Prix_Moyen,Prix_Min,Prix_Max
+Ahuntsic-Cartierville,147,111.0,135.34,38.0,1000.0
+Anjou,25,99.0,101.6,40.0,210.0
+Baie-d'Urfé,4,134.5,213.5,104.0,481.0
+Beaconsfield,9,129.0,135.89,85.0,181.0
+Côte-Saint-Luc,17,140.0,188.71,43.0,579.0
+Côte-des-Neiges-Notre-Dame-de-Grâce,541,114.0,133.62,40.0,1500.0
+Dollard-des-Ormeaux,15,150.0,259.0,61.0,1225.0
+Dorval,18,125.5,257.94,50.0,1318.0
+Hampstead,6,133.0,411.33,52.0,1558.0
+Kirkland,11,150.0,151.27,104.0,209.0
+L'Île-Bizard-Sainte-Geneviève,7,145.0,272.57,79.0,720.0
+LaSalle,73,108.0,140.59,44.0,654.0
+Lachine,64,96.5,108.2,43.0,316.0
+Le Plateau-Mont-Royal,1437,170.0,211.78,24.0,2000.0
+Le Sud-Ouest,509,144.0,192.25,37.0,1885.0
+Mercier-Hochelaga-Maisonneuve,368,105.5,130.45,25.0,800.0
+Mont-Royal,20,121.5,154.15,84.0,628.0
+Montréal-Est,3,162.0,148.33,120.0,163.0
+Montréal-Nord,16,128.0,143.69,55.0,247.0
+Montréal-Ouest,3,128.0,106.33,53.0,138.0
+Outremont,29,170.0,264.79,115.0,1400.0
+Pierrefonds-Roxboro,39,129.0,150.74,55.0,421.0
+Pointe-Claire,19,145.0,199.05,60.0,801.0
+Rivière-des-Prairies-Pointe-aux-Trembles,28,121.0,145.07,50.0,398.0
+Rosemont-La Petite-Patrie,494,124.0,154.82,25.0,1186.0
+Saint-Laurent,64,96.5,111.23,40.0,333.0
+Saint-Léonard,34,102.5,122.24,50.0,460.0
+Sainte-Anne-de-Bellevue,3,65.0,111.67,55.0,215.0
+Verdun,102,94.0,108.05,39.0,359.0
+Ville-Marie,2612,144.5,189.9,12.0,2000.0
+Villeray-Saint-Michel-Parc-Extension,216,112.5,133.62,29.0,865.0
+Westmount,30,152.0,173.77,82.0,369.0
