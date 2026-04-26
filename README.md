@@ -40,24 +40,24 @@ Analyse : Identifier les zones où l'écart se creuse le plus
 # Structure de regression suggéré
 **Variable dépendante** :
 ```
-Évictions_2023 (par census tract)
+Évictions_2023 (média) échelle arrondissement
 ```
 
 **Variables indépendantes** :
 ```
-Airbnb_Count_Entire           (pression directe)
-Augmentation_Loyer_16_21      (pression marché)
-Augmentation_Valeur_16_21 (%) (pression immobilière)
-Ratio_Loyer_Revenu            (vulnérabilité)
-Permis_Renovation             (renovictions)
+Airbnb_Count_Entire           (pression directe) mettre en échelle arrondissement
+Augmentation_Loyer_16_21      (pression marché) à calculer et mettre en échelle arrondissement
+Augmentation_Valeur_16_21 (%) (pression immobilière) à calculer et mettre en échelle arrondissement
+Ratio_Loyer_Revenu            (vulnérabilité) à calculer prendre celui de de 2021? et mettre en échelle arrondissement
+Permis_Renovation             (renovictions) 
 ```
 
 **Variables de contrôle** :
 ```
-% Locataires
-Revenu_Median
-% Immigrants_Recents
-Densite_Population
+% Locataires prendre celui de 2021? et mettre en échelle arrondissement
+Revenu_Median prendre celui de 2021? et mettre en échelle arrondissement
+% Immigrants_Recents à calculer et mettre en échelle arrondissement
+Densite_Population prendre celui de 2021? et mettre en échelle arrondissement
 ```
 
 # Documentation des variables du recensement
