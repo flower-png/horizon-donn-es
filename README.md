@@ -4,7 +4,7 @@
 | ✅ | 1    |Télécharger Inside Airbnb (archives 2018-2024)|
 | ✅ | 2    |Extraire loyers médians recensement 2016 + 2021 par CT|
 | ✅ | 3    |Télécharger pression immobilière et permis de construction|
-|    | 4    |Construire le panel de données par census tract + annéeRégression spatiale dans GeoDa +    régression temporelle| 
+| ✅ | 4    |Construire le panel de données par census tract + annéeRégression spatiale dans GeoDa +    régression temporelle| 
 
 # Plutôt qu'une seule régression, pensez à 3 analyses complémentaires :
 ```
@@ -18,19 +18,19 @@ Salaire stagnant                                                   abordables
 ```
 
 # Par variable — quoi faire avec les données
-## 💰 Loyers (2016, 2021, 2023)
+## Loyers (2016, 2021, 2023)
 
 Source : Recensement StatCan 2016 + 2021\
 Quoi faire : Calculer le % d'augmentation par census tract \
 Analyse : Carte choroplèthe + corrélation avec densité Airbnb
 
-## 📈 Airbnb par année
+## Airbnb par année
 
 Source : Inside Airbnb (archives disponibles)\
 Quoi faire : Compter les listings Entire home/apt par census tract par année → courbe de croissance\
 Analyse : Régression temporelle — est-ce que l'augmentation Airbnb précède l'augmentation des évictions ?
 
-## 💼 Revenus vs loyers
+## Revenus vs loyers
 
 Source : Recensement StatCan\
 Quoi faire : Calculer le ratio loyer/revenu médian par census tract en 2016 et 2021\
@@ -104,7 +104,7 @@ Densite_Population prendre celui de 2021? et mettre en échelle arrondissement
 
 ## Explication des variables
  
-### 🏠 Logement
+### Logement
  
 #### Mode d'occupation
 | Variable 2016 | Variable 2021 | Description |
@@ -119,7 +119,7 @@ Indique la proportion de locataires par secteur de recensement — les secteurs 
 |---|---|---|
 | v3937 | v4116 | 30%+ du revenu consacré au logement (tous ménages) |
 | v3941 | v4133 | % propriétaires consacrant 30%+ au logement |
-| v3948 | v4141 | % locataires consacrant 30%+ au logement ⭐ priorité haute |
+| v3948 | v4141 | % locataires consacrant 30%+ au logement |
  
 Le seuil de 30% est la mesure standard d'inabordabilité du logement au Canada. Un ménage qui dépasse ce seuil est considéré en situation de stress financier lié au logement. **v3948/v4141** est votre indicateur le plus important car il cible directement les locataires.
  
@@ -147,7 +147,7 @@ Mesure la pression du marché immobilier. Une forte hausse de la valeur des loge
  
 ---
  
-### 💰 Revenu
+### Revenu
  
 #### Revenu médian individuel
  
@@ -206,12 +206,12 @@ Le duplex et l'immeuble de moins de 5 étages sont les types de logement locatif
 #### Statut d'immigrant
 | Variable 2016 | Variable 2021 | Description |
 |---|---|---|
-| v3290 | v4163 | Immigrants récents (arrivés dans les 5 dernières années) ⭐ |
+| v3290 | v4163 | Immigrants récents (arrivés dans les 5 dernières années) |
 | v3291 | v4164 | Résidents non permanents |
 | v3282 | v4155 | Non-immigrants |
 | v3283 | v4156 | Immigrants (total) |
  
-> ⭐ **Variable clé :** Les immigrants récents (v3290/v4163) sont particulièrement vulnérables aux évictions car ils sont :
+> **Variable clé :** Les immigrants récents (v3290/v4163) sont particulièrement vulnérables aux évictions car ils sont :
 > - Moins bien informés de leurs droits comme locataires au Québec
 > - Souvent dans des logements précaires ou informels
 > - Moins susceptibles de contester une éviction au TAL
