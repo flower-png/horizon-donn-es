@@ -339,5 +339,10 @@ touristique dans quelques arrondissements centraux."
 |Max Airbnb| 2611 |Concentration|
 |Max évictions| 591 | Rosemont|
 
-
 ---
+
+# Discussion
+Sur le plan des loyers, le loyer médian est passé de 786 $ en 2016 à 906 $ en 2021, soit une hausse moyenne de 15% sur cinq ans. Cette augmentation est cependant inégalement répartie. Certains arrondissements comme Verdun ont connu des hausses allant jusqu'à 28%.
+Sur le plan du revenu, la progression des revenus médians sur la même période est de 17%, légèrement supérieure à celle des loyers. Toutefois, avec un revenu médian annuel de 34 378 $, le loyer médian de 906 $ représente environ 32% du revenu mensuel, plaçant les locataires montréalais juste au seuil critique d'inabordabilité tel que défini par la SCHL (30%). Le marché locatif reste donc sous tension malgré une hausse nominale des revenus.
+Concernant la structure locative, Montréal est une ville majoritairement locataire avec en moyenne 65% de ménages locataires dans les arrondissements étudiés (min. 36%, max. 73%). Cette proportion élevée expose une grande partie de la population aux risques d'éviction.
+Sur le plan des Airbnb, la distribution est fortement asymétrique. Avec une médiane de 216 listings mais une moyenne de 506 et un maximum de 2 611 (Ville-Marie), la majorité des listings Airbnb se concentre dans quelques arrondissements centraux comme Ville-Marie et Le Plateau-Mont-Royal. Cette concentration spatiale suggère une pression touristique localisée plutôt qu'uniformément répartie sur le territoire.
