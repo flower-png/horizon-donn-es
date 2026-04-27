@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv("dataset_arrondissement_FINAL_REGRESSION.csv")
+df = pd.read_csv("regression/dataset_arrondissement_FINAL_REGRESSION.csv")
 
 # =========================================================
 # STATISTIQUES DESCRIPTIVES — FACTEURS D'ÉVICTION
@@ -68,6 +68,19 @@ cols_affichage = {
 
 cols_dispo = {k: v for k, v in cols_affichage.items() if k in df.columns}
 tableau = df[list(cols_dispo.keys())].rename(columns=cols_dispo).copy()
+
+# colonnes numériques à arrondir
+cols_2_decimales = [
+    "Loyer 2016 ($)",
+    "Loyer 2021 ($)",
+    "Revenu médian ($)",
+    "Densité",
+    "% Locataires"
+]
+
+for col in cols_2_decimales:
+    if col in tableau.columns:
+        tableau[col] = tableau[col].round(2)
 
 # Arrondir hausse loyer en %
 if "Hausse loyer (%)" in tableau.columns:

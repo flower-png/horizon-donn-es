@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Charger ton CSV
-df = pd.read_csv("statistiques_descriptives.csv")
+df = pd.read_csv("tableau_arrondissements.csv")
 
 # Créer la figure
 fig, ax = plt.subplots(figsize=(12, 6))
@@ -24,7 +24,7 @@ table.scale(1, 1.5)  # (largeur, hauteur)
 
 
 # Sauvegarder en PNG
-plt.savefig("tableau_statistiques.png", bbox_inches='tight', dpi=200)
+plt.savefig("tableau_arrondissements.png", bbox_inches='tight', dpi=200)
 plt.close()
 
 print("✅ Tableau sauvegardé en image (PNG)")
